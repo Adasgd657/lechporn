@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona z Obrazami</title>
+    <style>
+        /* Style CSS */
+        body {
+            background-image: url('tło.jpg'); /* Obraz tła */
+            background-size: cover; /* Dopasuj obraz do całego ekranu */
+            background-position: center; /* Wyśrodkuj obraz */
+            background-repeat: no-repeat; /* Zapobiegaj powtarzaniu obrazu */
+            font-family: Arial, sans-serif; /* Czcionka */
+            color: #333; /* Kolor tekstu */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* Półprzezroczyste tło nagłówka */
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.8); /* Półprzezroczyste tło głównej sekcji */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8); /* Półprzezroczyste tło stopki */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .image-button {
+            width: 150px; /* Szerokość obrazu */
+            height: auto; /* Zachowaj proporcje */
+            border-radius: 10px; /* Zaokrąglone rogi */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień */
+            transition: transform 0.3s ease; /* Animacja powiększenia */
+            margin: 10px; /* Odstęp między obrazami */
+        }
+
+        .image-button:hover {
+            transform: scale(1.05); /* Lekkie powiększenie przy najechaniu */
+        }
+
+        a {
+            text-decoration: none; /* Usunięcie podkreślenia z linków */
+        }
+
+        /* Style dla ankiety */
+        .survey {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .survey button {
+            background-color: #4CAF50; /* Zielony kolor */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .survey button:hover {
+            background-color: #45a049; /* Ciemniejszy zielony po najechaniu */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Którą platformę dzisiaj wybierasz?</h1>
+    </header>
+    <main>
+        <p>Kliknij w obrazek, aby przejść do wybranej strony.</p>
+        <!-- Obrazy jako przyciski -->
+        <a href="https://www.pornhub.com" target="_blank" aria-label="Przejdź do Google">
+            <img src="Pornhub.webp" alt="Google" class="image-button">
+        </a>
+        <a href="https://www.xvidos.com" target="_blank" aria-label="Przejdź do YouTube">
+            <img src="XVideos-Symbol.png" alt="YouTube" class="image-button">
+        </a>
+        <a href="https://www.xhamster.com" target="_blank" aria-label="Przejdź do Wikipedii">
+            <img src="images2137.png" alt="Wikipedia" class="image-button">
+        </a>
+        <a href="https://www.brazzers.com" target="_blank" aria-label="Przejdź do GitHub">
+            <img src="brazzers-logo-zainal-mahardika.jpg" alt="GitHub" class="image-button">
+        </a>
+
+        <!-- Ankieta -->
+        <div class="survey">
+            <p>Czy masturbacja poszła pomyślnie?</p>
+            <button onclick="alert('Dziękujemy za odpowiedź: Tak!')">Tak</button>
+            <button onclick="alert('Dziękujemy za odpowiedź: Nie!')">Nie</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Moja Strona. Wszystkie porno zastrzeżone.</p>
+    </footer>
+</body>
+</html>
